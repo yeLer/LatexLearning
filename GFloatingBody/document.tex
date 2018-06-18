@@ -1,0 +1,47 @@
+% 导言区
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{graphicx}
+
+%标题、作者及日期
+\title{浮动体}
+\author{张三丰}
+\date{\today}
+
+\graphicspath{}%图片在当前目录下
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	\LaTeX{}中的浮动体：
+	% 创建以figure包围的浮动体,[htbp]可选参数设定浮动体的排版位置
+	% h,此处  t,页面顶部  b,页面底部  p,独立一页
+	\begin{figure}[h]
+		%让内容居中
+		\centering
+		\includegraphics[scale=0.3]{Koala}
+		%通过caption命令设定插图的标题
+		\caption{这是一只考拉}
+	\end{figure}
+	
+	当然，在\LaTeX{}也可以使用表\ref{tab-score}所示的表格。
+	
+	% 创建以table包围的浮动体
+	\begin{table}[h]
+		%让内容居中
+		\centering
+		%定义标签完成交叉引用，目的是实现软编码，增加修改的灵活性
+		\caption{考试成绩单}\label{tab-score}
+		\begin{tabular}{| l || c | c | c | r|}
+			\hline %表示横线
+			姓名 & 语文 & 数学 & 外语 & 备注 \\
+			\hline \hline %表示双横线
+			李四 & 75 & 64 & 52 & 补考另行通知 \\
+			\hline
+			王五 & 80 & 82 &78 & \\
+			\hline
+		\end{tabular}
+	\end{table}
+
+\end{document}

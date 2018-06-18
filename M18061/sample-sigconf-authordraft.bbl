@@ -1,0 +1,162 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{11}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Baldwin}{Baldwin}{1896}]%
+        {baldwin1896new}
+\bibfield{author}{\bibinfo{person}{J~Mark Baldwin}.}
+  \bibinfo{year}{1896}\natexlab{}.
+\newblock \showarticletitle{A new factor in evolution}.
+\newblock \bibinfo{journal}{{\em The american naturalist\/}}
+  \bibinfo{volume}{30}, \bibinfo{number}{354} (\bibinfo{year}{1896}),
+  \bibinfo{pages}{441--451}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Haldane}{Haldane}{1929}]%
+        {haldane1929rationalist}
+\bibfield{author}{\bibinfo{person}{JBS Haldane}.}
+  \bibinfo{year}{1929}\natexlab{}.
+\newblock \showarticletitle{Rationalist Annual}.
+\newblock \bibinfo{journal}{{\em The origin of Life\/}} (\bibinfo{year}{1929}),
+  \bibinfo{pages}{148}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Holland}{Holland}{1992}]%
+        {holland1992adaptation}
+\bibfield{author}{\bibinfo{person}{John~Henry Holland}.}
+  \bibinfo{year}{1992}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Adaptation in natural and artificial
+  systems: an introductory analysis with applications to biology, control, and
+  artificial intelligence}}.
+\newblock \bibinfo{publisher}{MIT press}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Koza}{Koza}{1994}]%
+        {koza1994genetic}
+\bibfield{author}{\bibinfo{person}{John~R Koza}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Genetic programming as a means for programming
+  computers by natural selection}.
+\newblock \bibinfo{journal}{{\em Statistics and computing\/}}
+  \bibinfo{volume}{4}, \bibinfo{number}{2} (\bibinfo{year}{1994}),
+  \bibinfo{pages}{87--112}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{LeCun, Bengio, and Hinton}{LeCun
+  et~al\mbox{.}}{2015}]%
+        {lecun2015deep}
+\bibfield{author}{\bibinfo{person}{Yann LeCun}, \bibinfo{person}{Yoshua
+  Bengio}, {and} \bibinfo{person}{Geoffrey Hinton}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Deep learning}.
+\newblock \bibinfo{journal}{{\em nature\/}} \bibinfo{volume}{521},
+  \bibinfo{number}{7553} (\bibinfo{year}{2015}), \bibinfo{pages}{436}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{McShea and Brandon}{McShea and
+  Brandon}{2010}]%
+        {mcshea2010biology}
+\bibfield{author}{\bibinfo{person}{Daniel~W McShea} {and}
+  \bibinfo{person}{Robert~N Brandon}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Biology's first law: the tendency for
+  diversity and complexity to increase in evolutionary systems}}.
+\newblock \bibinfo{publisher}{University of Chicago Press}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Narodytska and Kasiviswanathan}{Narodytska and
+  Kasiviswanathan}{2016}]%
+        {narodytska2016simple}
+\bibfield{author}{\bibinfo{person}{Nina Narodytska} {and}
+  \bibinfo{person}{Shiva~Prasad Kasiviswanathan}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Simple black-box adversarial perturbations for deep
+  networks}.
+\newblock \bibinfo{journal}{{\em arXiv:1612.06299\/}} (\bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nolfi, Bongard, Husbands, and Floreano}{Nolfi
+  et~al\mbox{.}}{2016}]%
+        {nolfi2016evolutionary}
+\bibfield{author}{\bibinfo{person}{Stefano Nolfi}, \bibinfo{person}{Josh~C
+  Bongard}, \bibinfo{person}{Phil Husbands}, {and} \bibinfo{person}{Dario
+  Floreano}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Evolutionary Robotics.}
+\newblock   (\bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sims}{Sims}{1994}]%
+        {sims1994evolving}
+\bibfield{author}{\bibinfo{person}{Karl Sims}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Evolving 3D morphology and behavior by
+  competition}.
+\newblock \bibinfo{journal}{{\em Artificial life\/}} \bibinfo{volume}{1},
+  \bibinfo{number}{4} (\bibinfo{year}{1994}), \bibinfo{pages}{353--372}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sutton and Barto}{Sutton and Barto}{1998}]%
+        {sutton1998reinforcement}
+\bibfield{author}{\bibinfo{person}{Richard~S Sutton} {and}
+  \bibinfo{person}{Andrew~G Barto}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Reinforcement learning: An introduction}}.
+  Vol.~\bibinfo{volume}{1}.
+\newblock \bibinfo{publisher}{MIT press Cambridge}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Taylor and Stone}{Taylor and Stone}{2009}]%
+        {taylor2009transfer}
+\bibfield{author}{\bibinfo{person}{Matthew~E Taylor} {and}
+  \bibinfo{person}{Peter Stone}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Transfer learning for reinforcement learning
+  domains: A survey}.
+\newblock \bibinfo{journal}{{\em Journal of Machine Learning Research\/}}
+  \bibinfo{volume}{10}, \bibinfo{number}{Jul} (\bibinfo{year}{2009}).
+\newblock
+
+
+\end{thebibliography}

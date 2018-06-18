@@ -1,0 +1,78 @@
+% 导言区
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{amsmath}
+
+%标题、作者及日期
+\title{数学模式中的矩阵}
+\author{张三丰}
+\date{\today}
+
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	%矩阵环境中，&分隔列 \\分隔行
+	\[
+	\begin{matrix}  
+	0 & 1 \\ 
+	1 & 0  
+	\end{matrix}  
+	\] \quad
+	
+	\[
+	\begin{pmatrix}
+	0 & 1 \\
+	1 & 0
+	\end{pmatrix}
+	\] \quad
+	
+	\[
+	\begin{bmatrix}
+	0 & 1 \\
+	1 & 0
+	\end{bmatrix}
+	\] \quad
+	
+	\[
+	\begin{Bmatrix}
+	0 & 1 \\
+	1 & 0
+	\end{Bmatrix}
+	\] \quad
+	
+	\[
+	\begin{vmatrix}
+		0 & 1 \\
+		1 & 0
+	\end{vmatrix}
+	\] \quad
+	
+	\[
+	\begin{Vmatrix}
+	0 & 1 \\
+	1 & 0
+	\end{Vmatrix}
+	\] \quad
+	%常用省略号：\dots \vdots $\ddots
+	\[
+	A = \begin{bmatrix}
+	a_{11} & \dots & a_{1n} \\
+	& \ddots & \vdots \\
+	0 & \dots & a_{nn}
+	%在数学模式中可以用times命令排版乘号
+	\end{bmatrix}_{n \times n}
+	\] \quad
+	
+	%分块矩阵（矩阵嵌套）
+	\[
+	\begin{pmatrix}
+	\begin{matrix} 1&0 \\0&1 \end{matrix}
+	& \text{\Large 0} \\
+	\text{\Large 0} & \begin{matrix}
+	1&0\\0&-1 \end{matrix}
+	\end{pmatrix}
+	\]
+	
+\end{document}

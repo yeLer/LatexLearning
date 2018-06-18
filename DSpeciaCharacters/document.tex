@@ -1,0 +1,71 @@
+% 导言区
+\documentclass[12pt]{article}
+
+\usepackage{ctex}
+
+%标题、作者及日期
+\title{特殊字符}
+\author{张三丰}
+\date{\today}
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	\section{空白符号}
+	%1em(代表当前字体中M的宽度)
+	ab		%没有空格
+	
+	a\,b or a\thinspace b	%中等空格,1/6m宽度
+	
+	a\ b	%1/3m宽度
+	
+	a~b	%硬空格
+	
+	a\enspace b	%1/2m宽度
+	
+	a \quad b	%quad空格,一个m的宽度
+	
+	a \qquad b	%两个quad空格，两个m的宽度	
+	
+	%1pc = 12pt = 4.218mm
+	a\kern 1pc b
+	
+	a\kern -1em b
+	
+	a\hskip 1em b
+	
+	a\hspace{35pt}b
+	
+	%占位宽度
+	a\hphantom{xyz}b
+	
+	%弹性长度,用于撑满整个空间
+	a\hfill b
+	
+	Using the recently proposed non-local (NL) model [43],we achieve 40.3 mask AP and 45.0 box AP. This result is without test-tim augmentation, and the method runs at 3fps on an Nvidia Tesla P100 GPU at test time.
+	
+	智能交通系统（ITS）是当今世界交通管理体系发展的必然趋势，而作为智能交通系统中的重要组成部分之一的车牌自动识别技术，目前已被广泛应用于城市道路监控、高速公路收费与监控、小区与停车场出入口管理、公安治安卡口等场合，成为研究的热点。
+	
+	智能交通系统（ITS）是当今世界交通管理体系发展的必然趋势。This result is without test-time augmentation, and the method runs at 3fps on an Nvidia Tesla P100 GPU at test time.高速公路收费与监控、小区与停车场出入口管理、公安治安卡口等场合，成为研究的热点。
+	\section{\LaTeX 控制符}
+	\# \quad \$ \quad \% \quad \{ \} \quad \~{} \quad \_{} \quad \^{} \quad \textbackslash \quad \& 
+	
+	\section{排版符号}
+	\S \quad \P \quad \dag \quad \ddag \quad \copyright \quad \pounds
+	
+	\section{\TeX 标志符号}
+	\TeX{} \quad \LaTeX{} \quad \LaTeXe{}
+	
+	\section{引号}
+	%ESC 按键下面的一个为左单引号，两个为左双引号  通常用的引号一个为右单引号，两个为右双引号，所以在LaTeX当中引号是严格分左右的
+	` ' `` '' ``你好''
+
+	\section{连字符}
+	- \quad -- \quad ---
+	
+	\section{非英文字符}
+	\oe \quad \OE \quad \ae \quad \AE \quad \aa \quad \AA \quad \o \quad \O \quad \l \quad \L \quad \ss \quad \SS 
+	
+	\section{重音符号，以o为例}
+	\`o \quad \'o \quad \^o \quad \~o \quad \=o \quad \.o \quad \u{o} \quad \v{o} \quad \H{o} \quad \r{o} \quad \t{o} \quad \b{o} \quad \c{o} \quad \d{o} \quad
+\end{document}

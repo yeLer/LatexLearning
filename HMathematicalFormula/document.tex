@@ -1,0 +1,101 @@
+% 导言区
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{graphicx}
+%不编号公式equation*使用的宏包
+\usepackage{amsmath}
+
+%标题、作者及日期
+\title{数学公式}
+\author{张三丰}
+\date{\today}
+
+\graphicspath{}%图片在当前目录下
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	\section{简介}
+	\LaTeX{}将排版内容分为文本模式和数学模式，文本模式用于普通的文本排版，数学模式用于数学公式的排版：
+	\section{行内公式}
+		\subsection{美元符号}
+		交换律是$a+b = b+a $,如$1+2 = 2+1$
+		\subsection{小括号}
+		交换律是\(a+b = b+a \),如\(1+2 = 2+1\)
+		\subsection{math环境}
+		交换律是\begin{math}
+			a+b = b+a
+		\end{math},如\begin{math}
+			1+2 = 2+1
+		\end{math}
+	\section{上下标}
+		\subsection{上标}
+		$3x^2 - x + 2 = 0$
+		
+		$3x^20 - x + 2 = 0$
+		
+		$3x^{20} - x + 2 = 0$
+		\subsection{下标}
+		$a_0,a_1...a_n$
+		
+		$a_00,a_11...a_nn$
+		
+		$a_{00},a_{11}...a_{nn}$
+	\section{希腊字母}
+	$\alpha $ \quad $\beta$ \quad $\gamma $ \quad $\delta $\quad $\epsilon $
+	
+	$\varepsilon $ \quad $\eta $ \quad $\Gamma $ \quad $\Delta $\quad $\Theta $
+	
+	$\kappa $ \quad $\lambda $ \quad $\mu $ \quad $\pi $\quad $\phi$
+	\section{数学函数}
+	$\sin  $ \quad $\tan$ \quad $\arcsin $ \quad $\liminf $\quad $\max  $
+	
+	$\sin^2x + \cos^2x = 1$
+	
+	$y = \arcsin x$
+	
+	$y = \sin^{-1} x$
+	
+	$y =\log_2 x$
+	
+	$y = \ln x$
+	
+	$\sqrt{2}$ \quad $\sqrt{x^2 + y^2}$ \quad $\sqrt{2 + \sqrt{2}}$ \quad $\sqrt[4]{x}$
+	\section{分式}
+	大约是原来像素的$3/4$。
+	
+	大约是原来像素的$\frac{3}{4}$
+	
+	$\frac{x}{x^2+x+1}$ \quad $\frac{\sqrt{x-1}}{\sqrt{x+1}}$ \quad  $\frac{1}{1+\frac{1}{x}}$ \quad $\sqrt{\frac{x}{x^2 +x +1}}$
+	
+	\section{行间公式}
+		\subsection{美元符号}
+		交换律是$$a+b = b+a $$,如$$1+2 = 2+1$$
+		\subsection{中括号}
+		交换律是\[a+b = b+a\] ,如\[1+2 = 2+1\]
+		\subsection{displaymath环境}
+		交换律是
+		\begin{displaymath}
+			a+b = b+a,
+		\end{displaymath}
+		如
+		\begin{displaymath}
+		1+2 = 2+1
+		\end{displaymath}
+		\subsection{自动编号公式equation环境}
+		交换律见式\ref{eq:commutative}
+		\begin{equation}
+			a+b = b+a \label{eq:commutative}
+		\end{equation}
+		
+		结合律见式\ref{eq:commutative2}
+		\begin{equation}
+		%定义label方便交叉引用
+		a*(b+c) = a*b+a*c \label{eq:commutative2}
+		\end{equation}
+		\subsection{不编号公式equation*}
+		\begin{equation*}
+			a+b = b+a
+		\end{equation*}
+\end{document}

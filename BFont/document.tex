@@ -1,0 +1,48 @@
+% 导言区,这里还可以设置全局的字体大小一般有 10pt,11pt,12pt
+\documentclass[12pt]{article}
+
+\usepackage{ctex}%引入中文包，使得中文可以正常显示
+
+%标题、作者及日期
+\title{字体族、字体形状、字体大小}
+\author{张三丰}
+\date{\today}
+%自定义混合命令
+\newcommand{\myfont}{\textbf{\textsf{Fancy Text}}}
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	%1、字体族设置（罗马字体、无衬线字体、打印机字体）
+	\textrm{Roman Family} \textsf{Sans Serif Family}  \texttt{Typewriter Family}%使用字体命令作用于命令的参数
+	
+	\rmfamily Roman Family {\sffamily Sans Serif Family} {\ttfamily Typewriter Family}%用于声明后续字体类型,因为这里设置了三种，所以后面两种需要添加内部作用域
+	
+	%本段字体会默认继承rmfamily字体类型
+	As a general framework, Mask R-CNN is compatible with complementary techniques developed for detection/segmentation.
+	
+	%还可以像上面一样使用{}分组设置字体类型
+	{\ttfamily Thanks to its generality and flexibility.}
+	
+	%2、字体形状设置（直立、斜体、伪斜体、小型大写）
+	\textup{Upright shape} \textit{Italic Shape} \textsl{Slanted Shape} \textsc{Small Caps Shape}
+	
+	{\upshape Upright shape} {\itshape Italic Shape} {\slshape Slanted Shape} {\scshape Small Caps Shape}
+	
+	%3、中文字体设置
+	{\songti 宋体} \quad {\heiti 黑体} \quad {\fangsong 仿宋} \quad {\kaishu 楷书}
+	
+	%4、中文字体的粗体与斜体
+	中文字体的\textbf{粗体}与\textit{斜体}
+	
+	%5、字体大小
+	{\tiny	hello} \quad {\scriptsize	hello}\quad{\footnotesize	hello}\quad{\small	hello}\quad{\normalsize	hello}\\
+	{\large	hello}\quad{\Large	hello}\quad{\LARGE	hello}\quad{\huge	hello}\quad{\Huge	hello}
+	
+	%6、中文字体大小
+	\zihao{2} 你好
+	
+	%7、调用自定义混合命令
+	\myfont
+	
+\end{document}

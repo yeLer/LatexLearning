@@ -1,0 +1,45 @@
+% 导言区
+\documentclass[cct]{article}
+
+\usepackage{xcolor}%定义了一些颜色  
+\usepackage{colortbl,booktabs}%第二个包定义了几个*rule 
+\usepackage{ctex}
+
+%标题、作者及日期
+\title{表格}
+\author{张三丰}
+\date{\today}
+
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	\LaTeX{}中的表格：
+	
+	\begin{table}
+		\centering  
+		%l靠左 c居中 r靠右
+		\begin{tabular}{ l || c | c | c | r|}
+		\hline %表示横线
+		姓名 & 语文 & 数学 & 外语 & 备注 \\
+		\hline \hline %表示双横线
+		李四 & 75 & 64 & 52 & 补考另行通知 \\
+		\hline
+		王五 & 80 & 82 &78 & \\
+		\hline
+		\end{tabular}
+	
+	
+		\caption{彩色的表格}  
+		\begin{tabular}  
+			{>{\columncolor{blue}}rccccc}  
+			\toprule[1pt]  
+			\rowcolor[gray]{0.9}    &1 &2   &3  &4  &5\\  
+			\midrule  
+			A   &\multicolumn{1}{>{\columncolor{green}[0pt][0pt]}c}{318.3}   &327.8  &152.0  &104.9  &135.8\\  
+			B   &&\multicolumn{1}{>{\columncolor{red}[0pt][0pt]}r}{335.5}    &137.7  &290.9  &198.6\\  
+			\bottomrule[1pt]  
+		\end{tabular}  
+	\end{table}  
+
+\end{document}
